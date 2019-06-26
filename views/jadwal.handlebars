@@ -1,0 +1,65 @@
+<style type="text/css">
+  .container {
+    display: flex;
+  justify-content: center;
+  flex-direction: row;
+  }
+</style>
+
+{{#if message includeZero=true}}
+	<div class="alert alert-success text-center" role="alert">
+	  {{message}}
+	</div>
+{{/if}}
+
+
+<div class="container" style="padding-top:70px;">
+	<div class="card" style="width: 30rem;">
+		<div class="card-header">
+			Tambah Jadwal Ke Mata Kuliah
+		</div>
+	  	<div class="card-body">
+	    	<form method="POST" action="/tambahjadwal">
+			  	
+			  	<div class="row">
+			  		<div class="col">
+			  			<div class="form-group">
+					   		<label for="id">ID Mata Kuliah</label>
+					    	<input type="text" class="form-control" id="id" aria-describedby="id" placeholder="ID Mata Kuliah" name="kodeMatkul" >
+					    	<small id="id" class="form-text text-muted">Contoh: IF12</small>
+					  	</div>
+			  		</div>
+			  		<div class="col">
+			  			<div class="form-group">
+					   		<label for="pertemuan">Pertemuan Ke</label>
+					    	<input type="number" class="form-control" id="pertemuan" aria-describedby="pertemuan" placeholder="Pertemuan Ke" name="pertemuan" value="1" min="1" max="16">
+					    	<small id="pertemuan" class="form-text text-muted">Isi dengan angka 1 - 16</small>
+					  	</div>
+			  		</div>
+			  	</div>
+			  		<div class="form-group">
+				   		<label for="ruang">Ruangan</label>
+				    	<input type="text" class="form-control" id="ruang" aria-describedby="ruang" placeholder="Ruangan Kuliah" name="ruang">
+				  	</div>
+				<div class="row">
+			  		<div class="col">
+			  			<div class="form-group">
+					   		<label for="masuk">Jam Masuk</label>
+					    	<input type="text" class="form-control" id="masuk" aria-describedby="masuk" name="masuk">
+					  	</div>
+			  		</div>
+			  		<div class="col">
+			  			<div class="form-group">
+					   		<label for="selesai">Jam Selesai</label>
+					    	<input type="text" class="form-control" id="selesai" aria-describedby="selesai" name="selesai">
+					  	</div>
+			  		</div>
+			  	</div>
+			  	<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+	  	</div>
+	  	<div class="card-footer">
+
+	  	</div>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+<style type="text/css">
+  .container {
+    display: flex;
+  justify-content: center;
+  flex-direction: row;
+  }
+</style>
+
+<div class="container" style="padding-top:70px;">
+	<div class="card" style="width: 30rem;">
+		<div class="card-header">
+			Rekap Kuliah per Semester
+		</div>
+	  	<div class="card-body">
+	    	<form method="POST" action="/rekapkuliahsemester">
+			  	<div class="form-group">
+					<label for="id">ID Mata Kuliah</label>
+					    <input type="text" class="form-control" id="id" aria-describedby="id" placeholder="ID Mata Kuliah" name="kodeMatkul" >
+					    <small id="id" class="form-text text-muted">Contoh: IF5</small>
+				</div>
+			  	
+			  	<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+	  	</div>
+	  	<div class="card-footer">
+
+	  	</div>
+	</div>
+</div>

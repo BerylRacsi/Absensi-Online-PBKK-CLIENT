@@ -1,0 +1,48 @@
+<style type="text/css">
+  .container {
+    display: flex;
+  justify-content: center;
+  flex-direction: row;
+  }
+</style>
+
+{{#if message includeZero=true}}
+	<div class="alert alert-success text-center" role="alert">
+	  {{message}}
+	</div>
+{{/if}}
+
+
+<div class="container" style="padding-top:70px;">
+	<div class="card" style="width: 40rem;">
+		<div class="card-header">
+			Rekap Mahasiswa per Semester
+		</div>
+	  	<div class="card-body">
+	  		<table class="table table-hover">
+			  	<thead>
+			    	<tr>
+			      		<th scope="col">Kode MatKul</th>
+			      		<th scope="col">Nama MatKul</th>
+			      		<th scope="col">Kelas</th>
+			      		<th scope="col">Semester</th>
+			      		<th scope="col">NRP</th>
+			      		<th scope="col">Jumlah Masuk</th>
+			    	</tr>
+			  	</thead>
+			  	<tbody>
+			    	{{#each test.values}}
+					    <tr>
+				      		<td>{{this.kode}}</td>
+				      		<td>{{this.name}}</td>
+				      		<td>{{this.kelas}}</td>
+				      		<td>{{this.semester}}</td>
+				      		<td>{{this.nrp}}</td>
+				      		<td>{{this.jumlah_masuk}}</td>
+			    		</tr>
+					{{/each}}
+			  	</tbody>
+			</table>
+	  	</div>
+	</div>
+</div>

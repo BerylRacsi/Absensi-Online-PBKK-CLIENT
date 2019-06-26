@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  	<a class="navbar-brand" href="#">Absensi Online</a>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  	</button>
+
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    	<ul class="navbar-nav mr-auto">
+      		<li class="nav-item">
+        		<a class="nav-link" href="/index">Home </a>
+      		</li>
+      		<li class="nav-item">
+        		<a class="nav-link" href="/mahasiswa">Mahasiswa</a>
+      		</li>
+      		<li class="nav-item">
+        		<a class="nav-link" href="/matkul">Mata Kuliah</a>
+      		</li>
+      		<li class="nav-item">
+        		<a class="nav-link" href="/peserta">Peserta</a>
+      		</li>
+      		<li class="nav-item">
+        		<a class="nav-link" href="/jadwal">Jadwal</a>
+      		</li>
+      		<li class="nav-item dropdown">
+        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          		Rekap
+        		</a>
+        		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          			<a class="dropdown-item" href="/kuliahsemester">Kuliah Per Semester</a>
+          			<a class="dropdown-item" href="/kuliahpertemuan">Kuliah Per Pertemuan</a>
+          			<div class="dropdown-divider"></div>
+          			<a class="dropdown-item" href="/mahasiswakuliah">Per Mahasiswa Per Kuliah</a>
+          			<a class="dropdown-item" href="/mahasiswasemester">Per Mahasiswa Per Semester</a>
+        		</div>
+      		</li>
+          <li class="nav-item">
+            <a class="nav-link" href="/absen">Absen</a>
+          </li>
+    	</ul>
+    	<ul class="navbar-nav ml-auto">
+    		<li class="nav-item">
+        		<a class="nav-link disabled" href="#">Welcome, {{nrp}}</a>
+      		</li>
+    	</ul>
+      	<a class="btn btn-outline-danger my-2 my-sm-0" href="/logout">Logout</a>
+  	</div>
+</nav>
+
+{{{body}}}
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
